@@ -32,7 +32,8 @@
 > * **方式一（快捷访问）：** 按下键盘组合键 `Windows + X`，在弹出的菜单中选择 `Windows PowerShell`。
 > * **方式二（系统搜索）：** 点击桌面任务栏的 🔎 搜索图标，输入 `PowerShell` 并点击打开。
 > * **方式三（终极方案）：** 使用本页提供的 **🛡️ PowerShell 管理员快捷方式**。
-
+> 
+> **教程链接：** 🔗[YouTube 视频教程](https://youtu.be/q_gJc6e8tK0) | 🔗[Bilibili 视频教程](https://www.bilibili.com/video/BV1iXVA6rEdn/)
 ---
 
 ### 🔗 仓库Light-help快捷方式
@@ -51,6 +52,7 @@ iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/light/Crea
 ---
 
 ## 📑 视频教程导航
+- [▶️ PowerShell 终极运行指南 (Win/Mac/Linux)](#️-光速分享-yt-视频教程powershell-脚本终极运行指南提权修复与全平台配置)
 - [▶️ Windows 内存终极拯救](#️-光速分享-yt-视频教程windows-1110-内存终极拯救一行代码一键释放-ram让电脑瞬间起飞)
 - [▶️ 一行代码利用AI一键生成完美证件照](#️-光速分享-yt-视频教程一行代码利用ai一键生成完美证件照别再去照相馆花冤枉钱了省时又省力)
 - [▶️ 一行代码彻底汉化 GitHub！](#️-光速分享-yt-视频教程一行代码彻底汉化-github最快配置方案)
@@ -58,6 +60,43 @@ iwr -useb https://raw.githubusercontent.com/Cotton059/Light-Help/main/light/Crea
 - [▶️ 一行代码深度清理 Windows！](#️-光速分享-yt-视频教程一行代码深度清理-windows无需安装软件一键释放巨量系统空间)
 - [▶️ 免费家庭影院搭建教程｜无需NAS](#️-光速分享-yt-视频教程免费家庭影院搭建教程无需nas一台电脑实现自动海报墙--全设备播放)
 - [▶️ iPhone照片视频无线传输到Windows](#️-光速分享-yt-视频教程iphone照片视频无线传输到windows无需任何软件)
+
+---
+#### ▶️ 光速分享 (YT) 视频教程：[PowerShell 脚本终极运行指南：提权、修复与全平台配置](https://youtu.be/YOUR_VIDEO_ID)
+
+<a href="https://youtu.be/q_gJc6e8tK0" target="_blank">
+  <img src="images/021-1920-zh.png" width="320" style="border-radius: 8px;" alt="视频封面图" title="点击播放视频" />
+</a>
+
+### 🚑 Windows 环境修复与独立版安装
+> **提示：** 如果您的精简版/老旧版系统找不到 PowerShell 或运行闪退报错，请按下 `Win + R` 输入 `cmd` 回车后，选择以下任一方案执行：
+
+**方案 A：唤醒系统底层休眠组件 (CMD运行)**
+```cmd
+dism /online /Enable-Feature /FeatureName:MicrosoftWindowsPowerShellRoot /All
+```
+**方案 B：安装PowerShell 7 官方组件 (CMD运行)**
+```cmd
+curl -L -o PS.msi https://github.com/PowerShell/PowerShell/releases/download/v7.4.2/PowerShell-7.4.2-win-x64.msi && msiexec /i PS.msi /qb
+```
+### 🍏 Mac 系统安装 PowerShell
+
+> **提示：** 如果您的 macOS 需要安装 PowerShell 跨平台终端环境，请按下 `Command + 空格` 搜索并打开“终端”(Terminal)。
+
+```Bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+> **提示：** 安装好 Homebrew 后，复制以下命令一键安装 PowerShell：
+
+```Bash
+brew install --cask powershell
+```
+### 🐧Linux 系统安装 (以 Ubuntu 的 Snap 包管理器为例)：
+> **提示**： 如果您的 Linux 系统缺少 PowerShell 运行组件，请直接打开系统的命令行终端，并使用自带的包管理器拉取最新版环境
+```Bash
+sudo snap install powershell --classic
+```
+
 
 ---
 #### ▶️ 光速分享 (YT) 视频教程：[Windows 11/10 内存终极拯救：一行代码一键释放 RAM，让电脑瞬间起飞！](https://youtu.be/PqKu_lRyAZM)
